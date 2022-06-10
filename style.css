@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+html, body{
+    height: 100%;
+}
+
+
+/* ---------------- HEADER ----------------*/
+header{
+    background-color: #3E065F;
+    position: relative;
+    height: 90vh; /* ALTURA DE LA PORTADA*/
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__brand img{
+    width: 90px;
+}
+
+.menu__lista a{
+    margin-right: 2.5em;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+
+.menu__lista a:hover{
+    color: black;
+}
+
+.presentacion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 650px;
+}
+
+.presentacion__mini h1 , .presentacion__mini h3  {
+    color: white;
+    margin: 20px;
+}
+
+.presentacion__mini h1{
+    font-size: 55px;
+}
+
+.presentacion__mini h3{
+    font-size: 30px;   
+}
+
+.presentacion__mini span{
+    color: black;
+    font-size: 70px;
+}
+
+.presentacion__encabezado img{
+    width: 400px;
+    animation: move_img 5s ease-in-out infinite;
+}
+ 
+@keyframes move_img {
+    0%{
+        transform: translateY(15px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+
+.wave{
+    position: absolute;
+    bottom: -10px;
+}
+
+.wave img {
+    width: 100%;
+}
+
+/* ---------------- MAIN ----------------*/
+
+/* PRIMER */
+main{
+    background-color: black;
+}
+
+.Institucion{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.institucion__imagen {
+    width: 600px;
+}
+
+.institucion__texto{
+    color: white;
+    width: 800px;
+    font-size: 20px;
+}
+
+
+
+
+
+/* SEGUNDO */
+
+/* ------------------- FOOTER ---------------------*/
