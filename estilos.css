@@ -6,14 +6,15 @@
   font-family: sans-serif;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
 header {
   background-color: #17171a;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -21,9 +22,9 @@ header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -33,12 +34,13 @@ header .nav {
   padding: 0 1rem;
 }
 
-header .nav .nav__brand {
-  width: 90px;
-}
-
-header .nav .nav__brand img {
-  width: 100%;
+@media all and (max-width: 767px) {
+  header .nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    padding: 1rem;
+  }
 }
 
 header .nav .nav__menu {
@@ -52,6 +54,7 @@ header .nav .nav__menu {
 }
 
 header .nav .nav__menu .button {
+  border: none;
   background-color: transparent;
 }
 
@@ -68,8 +71,8 @@ header .nav .nav__links {
   header .nav .nav__links {
     height: 0;
     width: 100%;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
 }
 
@@ -133,7 +136,7 @@ header .presentacion {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 650px;
+  height: calc(100% - 245px);
   padding: 1rem;
 }
 
@@ -215,7 +218,7 @@ header .presentacion .presentacion__mini h1 {
 }
 
 header .presentacion .presentacion__mini .letra {
-  color: #EC994B;
+  color: #ec994b;
   font-size: 86px;
 }
 
