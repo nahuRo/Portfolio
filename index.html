@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,9 +14,8 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="nav">
-
             <div class="nav__menu">
                 <button class="button">
                     <i class="fa-solid fa-bars"></i>
@@ -25,80 +25,221 @@
             <div class="nav__links">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Proyects</a></li>
-                    <li><a href="#">Others</a></li>
+                    <li><a href="#proyects">Proyects</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Contacts</a></li>
                 </ul>
             </div>
         </nav>
-
-        <div class="presentacion">
-            <div class="presentacion__mini">
-                <!-- <h2>¡Hola! </h2> -->
-                <h1>Soy <span class="letra">A</span>gustín <span class="letra">R</span>odriguez</h1>
-                <h2 class="centrado">Front-End Developer</h2>
-            </div>
-            <div class="presentacion__encabezado">
-                <img src="./assets/hea.svg" alt="programming">
-            </div>
-        </div>
-
-        <div class="wave__container">
-            <img src="./assets/ola.svg" alt="ola">
-        </div>
     </header>
 
+    <main class="main">
+        <section class="presentation">
+            <div class="side">
+                <div class="presentacion__mini">
+                    <h1> <span class="letra">A</span>gustín <span class="letra">R</span>odriguez</h1>
+                    <h2 class="centrado">Front-End Developer</h2>
+                    <p class="resumen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis at quaerat
+                        cupiditate,
+                        nemo odio
+                        nostrum illum dolorum rem minus culpa ad ipsa, pariatur maiores ab! Temporibus quod optio porro
+                        ex?
+                    </p>
+                    <div class="btn">
+                        <a href="https://nahuro.github.io/Proyecto_final_Bodega/" target="_blank">Contactame <i
+                                class="uil uil-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side">
+
+                <div class="presentacion__encabezado">
+                    <div class="cont_img__header">
+                        <img src="./assets/hea.svg" alt="programming">
+                    </div>
+                    <div class="social__links">
+                        <a href="https://github.com/nahuRo" target="_blank"><i class="uil uil-github-alt"></i></a>
+                        <a href="https://www.linkedin.com/in/agust%C3%ADnrodr%C3%ADguez" target="_blank"><i
+                                class="uil uil-linkedin-alt"></i></a>
+                        <a href="#"><i class="uil uil-instagram"></i></a>
+                        <!-- <a href="https://www.instagram.com/agussrg80" target="_blank"><i class="uil uil-instagram"></i></a> -->
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
 
 
-
-
-    <main>
-        <section>
+        <section id="proyects" class="proyects">
             <h2 class="tittle">Proyectos !</h2>
-            <div class="cont__card">
+            <div class="cont__cards">
+
                 <div class="card">
                     <div class="cont__img">
                         <img src="./assets/cardBodega.png" alt="">
                     </div>
-                    <div class="cont__dates">
-                        <div class="Description">
-                            <p>HTML, CSS, Boostrap, Sass</p>
-                        </div>
+                    <div class="resume__proyect">
+                        <h5 class="type__proyect">WEB DESIGN</h5>
+                        <h2 class="name__proyect">BODEGA FILGO</h2>
+                        <p class="info__proyect">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                            amet laudantium sequi
+                            o, saepe non vel neque molestiae minus iste labore! A facilis ut
+                        </p>
                         <div class="btn">
-                            <a href="https://nahuro.github.io/Proyecto_final_Bodega/" target="_blank">Ver</a>
+                            <a href="https://nahuro.github.io/Proyecto_final_Bodega/" target="_blank">Deploy <i
+                                    class="uil uil-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-
-
 
                 <div class="card">
                     <div class="cont__img">
                         <img src="./assets/cardMusic.png" alt="">
                     </div>
-                    <div class="cont__dates">
-                        <div class="Description">
-                            <p>HTML, CSS, JavaScript</p>
-                        </div>
+
+                    <div class="resume__proyect">
+                        <h5 class="type__proyect">WEB DESIGN</h5>
+                        <h2 class="name__proyect">BODEGA FILGO</h2>
+                        <p class="info__proyect">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                            amet laudantium sequi
+                            o, saepe non vel neque molestiae minus iste labore! A facilis ut
+                        </p>
                         <div class="btn">
-                            <a href="https://nahuro.github.io/reproductoMusic/#" target="_blank">Ver</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cont__img">
-                        <img src="./assets/cardTienda.png" alt="">
-                    </div>
-                    <div class="cont__dates">
-                        <div class="Description">
-                            <p>HTML, CSS, JavaScript, React</p>
-                        </div>
-                        <div class="btn">
-                            <a href="https://ecommerce-hazel-ten.vercel.app/" target="_blank">Ver</a>
+                            <a href="https://nahuro.github.io/Proyecto_final_Bodega/" target="_blank">Deploy <i
+                                    class="uil uil-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="cont__img">
+                        <img src="./assets/cardTienda.png" alt="">
+                    </div>
+                    <div class="resume__proyect">
+                        <h5 class="type__proyect">WEB DESIGN</h5>
+                        <h2 class="name__proyect">BODEGA FILGO</h2>
+                        <p class="info__proyect">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                            amet laudantium sequi
+                            o, saepe non vel neque molestiae minus iste labore! A facilis ut
+                        </p>
+                        <div class="btn">
+                            <a href="https://nahuro.github.io/Proyecto_final_Bodega/" target="_blank">Deploy <i
+                                    class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /// -->
+                <div class="card">
+                    <div class="cont__img">
+                        <img src="./assets/cardBodega.png" alt="">
+                    </div>
+                    <div class="resume__proyect">
+                        <h5 class="type__proyect">WEB DESIGN</h5>
+                        <h2 class="name__proyect">BODEGA FILGO</h2>
+                        <p class="info__proyect">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                            amet laudantium sequi
+                            o, saepe non vel neque molestiae minus iste labore! A facilis ut
+                        </p>
+                        <div class="btn">
+                            <a href="https://nahuro.github.io/Proyecto_final_Bodega/" target="_blank">Deploy <i
+                                    class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cont__img">
+                        <img src="./assets/cardMusic.png" alt="">
+                    </div>
+
+                    <div class="resume__proyect">
+                        <h5 class="type__proyect">WEB DESIGN</h5>
+                        <h2 class="name__proyect">BODEGA FILGO</h2>
+                        <p class="info__proyect">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                            amet laudantium sequi
+                            o, saepe non vel neque molestiae minus iste labore! A facilis ut
+                        </p>
+                        <div class="btn">
+                            <a href="https://nahuro.github.io/Proyecto_final_Bodega/" target="_blank">Deploy <i
+                                    class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cont__img">
+                        <img src="./assets/cardTienda.png" alt="">
+                    </div>
+                    <div class="resume__proyect">
+                        <h5 class="type__proyect">WEB DESIGN</h5>
+                        <h2 class="name__proyect">BODEGA FILGO</h2>
+                        <p class="info__proyect">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                            amet laudantium sequi
+                            o, saepe non vel neque molestiae minus iste labore! A facilis ut
+                        </p>
+                        <div class="btn">
+                            <a href="https://nahuro.github.io/Proyecto_final_Bodega/" target="_blank">Deploy <i
+                                    class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="side">
+                <div class="about__info">
+                    <h2>About me</h2>
+                    <p class="text">Soy desarrollador Junior Full Stack MERN & Mobile Apps, me capacité en Mindhub LA
+                        (más de 800hs
+                        de cursada), mediante el método de enseñanza Learn by doing (LBD) , utilizando metodologías
+                        Agile / Scrum simulando un ambiente laboral REAL. Tengo principios básicos muy marcados como la
+                        responsabilidad, el respeto, la honestidad, puntualidad y sinceridad. Me gusta desarrollar
+                        diseños web (Front-End) aplicando todos los conceptos que aprendí a lo largo de mi experiencia
+                        desarrollando apps.</p>
+
+                    <p class="text">Actualmente me encuentro en busca de mi primer empleo a tiempo completo, para poner
+                        en práctica
+                        todos mis conocimientos y aptitudes además de seguir aprendiendo y creciendo profesionalmente.
+                    </p>
+                </div>
+
+                <div class="tecnologies">
+                    <h3>tecnologias</h3>
+                    <div class="cont__logos">
+                        <button>
+                            <i class="uil uil-arrow-left"></i>
+                        </button>
+                        <div class="cont__logo">
+                            <img src="./assets/logos/html.png" alt="">
+                            <h5>HTML</h5>
+                        </div>
+                        <div class="cont__logo">
+                            <img src="./assets/logos/css.png" alt="">
+                            <h5>CSS</h5>
+                        </div>
+                        <div class="cont__logo">
+                            <img src="./assets/logos/javascript.png" alt="">
+                            <h5>JAVASCRIPT</h5>
+                        </div>
+                        <div class="cont__logo">
+                            <img src="./assets/logos/react.png" alt="">
+                            <h5>REACT</h5>
+                        </div>
+                        <button>
+                            <i class="uil uil-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="about__imgCont">
+                    <img src="./assets/hea.svg" alt="programming">
+                </div>
             </div>
 
         </section>
