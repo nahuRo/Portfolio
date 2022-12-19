@@ -44,15 +44,17 @@ img {
 
 	--black-coral: hsla(220, 12%, 43%, 1);
 	--grey: #f5f5f5;
-	--white: #ffffff;
+	/* --white: #ffffff; */
 	--black: #000000;
-
-	--weight-M: 500;
+	--orange: #ec994b;
 }
 section {
 	min-height: 100vh;
 	padding: 1rem;
 	max-width: 1300px;
+	margin: 0 auto;
+}
+.center__block {
 	margin: 0 auto;
 }
 .side {
@@ -66,19 +68,44 @@ section {
 	align-items: center;
 }
 
-.btn__primary {
-	background-color: var(--manatee);
+.btn {
+	text-align: center;
 	padding: 10px 7px;
 	border-radius: 5px;
+	border: none;
+	width: 100%;
+	cursor: pointer;
+	transition: all ease-in-out 400ms;
+}
+.btn__c1 {
+	background-color: var(--manatee);
 	color: var(--white);
 }
+.btn__c1:hover {
+	background-color: var(--white);
+	color: var(--manatee);
+}
+.btn__c2 {
+	background-color: var(--white);
+	color: var(--manatee);
+}
+.btn__c2:hover {
+	background-color: var(--manatee);
+	color: var(--white);
+}
+.btn__c3 {
+	background-color: var(--cadet-blue-crayola_a20);
+	color: var(--black-coral);
+}
+.btn__c3:hover {
+	background-color: var(--manatee);
+	color: var(--white);
+}
+
 .cont__btn {
 	margin-top: 2rem;
 }
 
-.center {
-	text-align: center;
-}
 /* HEADER */
 
 .header .nav {
@@ -144,7 +171,7 @@ section {
 }
 .main .presentation .presentacion__mini .first__W {
 	font-size: 4rem;
-	color: #ec994b;
+	color: var(--orange);
 }
 .main .presentation .presentacion__mini .name {
 	font-size: 2rem;
@@ -212,7 +239,7 @@ section {
 }
 .main .proyects .cont__cards .card .resume__proyect .type__proyect {
 	padding-top: 0.3rem;
-	color: #ec994b;
+	color: var(--orange);
 }
 .main .proyects .cont__cards .card .resume__proyect .name__proyect {
 	padding-top: 0.7rem;
@@ -227,7 +254,14 @@ section {
 	margin-top: 0.8rem;
 }
 .main .proyects .cont__cards .card .resume__proyect .cont__linksCard a {
-	color: #ec994b;
+	color: var(--orange);
+}
+/* Proyect.html */
+.main .proyects .cont__ProyectLink {
+	margin-top: 1rem;
+}
+.main .proyects .cont__ProyectLink a {
+	display: block;
 }
 
 /* about */
@@ -300,14 +334,6 @@ section {
 	border-radius: 5px;
 	padding: 7px;
 	background-color: #f5f5f5;
-}
-.main .contact .cont__form .cont__input .submit__input {
-	margin-top: 1rem;
-	background-color: #f5f5f5;
-}
-.main .contact .cont__form .cont__input .submit__input:hover {
-	background-color: #ffe3e1;
-	cursor: pointer;
 }
 /* ---- FOOTER ----*/
 
@@ -531,3 +557,4 @@ section {
 		object-fit: contain;
 	}
 }
+/* 560 */
