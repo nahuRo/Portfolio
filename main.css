@@ -44,7 +44,6 @@ img {
 
 	--black-coral: hsla(220, 12%, 43%, 1);
 	--grey: #f5f5f5;
-	/* --white: #ffffff; */
 	--black: #000000;
 	--orange: #ec994b;
 }
@@ -106,6 +105,16 @@ section {
 	margin-top: 2rem;
 }
 
+.section__tittle {
+	text-align: center;
+	font-size: 3.2rem;
+	margin-bottom: 1.1rem;
+}
+
+.text {
+	font-size: 1rem;
+	padding: 0.3rem;
+}
 /* HEADER */
 
 .header .nav {
@@ -212,17 +221,24 @@ section {
 }
 
 /* proyects */
-.main .proyects .tittle {
-	font-size: 3rem;
-	text-align: center;
-	padding-bottom: 1.5rem;
-}
+
 .main .proyects .cont__cards {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
 }
 .main .proyects .cont__cards .card {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	background-color: var(--white);
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	padding: 10px;
+	height: 370px;
+	transition: all 0.5s ease;
+}
+.main .proyects .cont__cards .card:hover {
+	transform: scale(1.04);
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	background-color: var(--white);
 	display: flex;
@@ -265,15 +281,6 @@ section {
 }
 
 /* about */
-.main .about {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.main .about .about__info {
-	margin: 0 auto;
-}
 
 .main .about .tecnologies {
 	margin: 1rem auto 0 auto;
@@ -384,6 +391,10 @@ section {
 	.flex__container {
 		flex-direction: column;
 		justify-content: space-evenly;
+	}
+	.section__tittle {
+		font-size: 8vw;
+		margin-bottom: 0.9rem;
 	}
 	.header .nav {
 		justify-content: end;
@@ -519,6 +530,11 @@ section {
 }
 
 @media screen and (min-width: 640px) and (max-width: 1280px) {
+	.section__tittle {
+		font-size: 2.3rem;
+		margin-bottom: 1rem;
+	}
+
 	.main .presentation .presentacion__mini .first__W {
 		font-size: 2.5rem;
 	}
@@ -557,4 +573,3 @@ section {
 		object-fit: contain;
 	}
 }
-/* 560 */
