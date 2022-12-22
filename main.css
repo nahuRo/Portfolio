@@ -306,6 +306,9 @@ img {
 	height: 100px;
 }
 .main .about .tecnologies .cont__logos .cont__logo img {
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
 	border-radius: 10px;
 }
 
@@ -484,7 +487,6 @@ img {
 	.main .about .tecnologies .cont__logos .cont__logo img {
 		width: 60px;
 		height: 60px;
-		object-fit: contain;
 	}
 	/* contact */
 	.main .contact {
@@ -574,10 +576,5 @@ img {
 	.main .about .tecnologies .cont__logos {
 		column-gap: 7px;
 		row-gap: 25px;
-	}
-	.main .about .tecnologies .cont__logos .cont__logo img {
-		width: 100px;
-		height: 100px;
-		object-fit: contain;
 	}
 }
